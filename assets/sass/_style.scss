@@ -1,3 +1,10 @@
-body{
-	background-color: blue;
+#contenedor-principal{
+	background-color:whitesmoke;
+	#caja{
+		width: 25%;
+		margin: 0 auto;
+		height: 50%;
+		background-color: white;
+		border: solid thin silver;
+	}
 }

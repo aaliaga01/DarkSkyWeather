@@ -10252,3 +10252,9 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+$(document).ready (function(){
+
+	$.getJSON('https://api.darksky.net/forecast/37457c3f51925aa523a0b4d7702c1e54/37.8267,-122.4233', function(forecast) {});
+	
+	})
