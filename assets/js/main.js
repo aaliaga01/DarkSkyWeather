@@ -1,23 +1,13 @@
 
-$(document).ready (function(){
-
-var cal= function(){
-
-	$.ajax( {
-	url: "https://api.darksky.net/forecast/37457c3f51925aa523a0b4d7702c1e54/37.8267,-122.4233",
-	type: 'GET',
-	dataType: 'JSON',
-	data: {'temperature' : 1},
-	})
-	.done(function(response) {
-		console.log("success");
-
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	});
-	}
+$.getJSON('https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233', function(resp) {
+    $.each(resp, function(k, v) {
+        console.log(k + ' : ' + v);
 });
+});
+
+
+/* Me sale este error todo el rato, no se que hacer
+XMLHttpRequest cannot load https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233. 
+No 'Access-Control-Allow-Origin' header is present on the requested resource. 
+Origin 'null' is therefore not allowed access.
+*/
