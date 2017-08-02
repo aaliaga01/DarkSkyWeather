@@ -10253,21 +10253,24 @@ return jQuery;
 } );
 
 
+$(document).ready (function(){
 
-$(document).ready(function() {
-    $.ajax({
-      url: 'https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233',
-      type: 'GET',
-      dataType: 'json',
-      success: function(datos) {
-        $('#caja').text(JSON.stringify(datos));
-      }
-    });
+	$.ajax(
+{
+  url: "https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/-33.4372,-70.6506",
+	type: 'GET',
+	dataType: 'JSON',
+})
+  .done(function(data) {
+    console.log("success");
+    $('#caja').append('<div class="icono">' + data.currently.icon + '</div>');
+    $('#caja').append('<p>Temperatura: ' + data.currently.temperature + '</p>')
+  })
+  .fail(function(data) {
+    console.log( "error" );
+  })
+  .always(function(data) {
+    console.log( "complete" );
+  });
+
 });
-
-
-/* Me sale este error todo el rato, no se que hacer
-XMLHttpRequest cannot load https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233. 
-No 'Access-Control-Allow-Origin' header is present on the requested resource. 
-Origin 'null' is therefore not allowed access.
-*/
