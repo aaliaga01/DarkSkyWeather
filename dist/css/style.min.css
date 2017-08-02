@@ -1,1 +1,1 @@
-#contenedor-principal{background-image:url(../iconos/lluvia.jpg);background-position:center;background-size:cover}#contenedor-principal #caja{width:25%;margin:0 auto;height:50%;background-color:#fff;border:thin solid silver}
+#contenedor-principal{background-image:url(dist/iconos/lluvia.jpg);background-position:center;background-size:cover;height:100vh}#contenedor-principal #caja{width:25%;margin:0 auto;height:50%;background-color:#fff;border:thin solid silver}
