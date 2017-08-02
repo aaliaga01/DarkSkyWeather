@@ -10255,7 +10255,6 @@ return jQuery;
 
 
 $(document).ready(function() {
-
     $.ajax({
       url: 'https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233',
       type: 'GET',
@@ -10265,6 +10264,7 @@ $(document).ready(function() {
       }
     });
 });
+
 
 /* Me sale este error todo el rato, no se que hacer
 XMLHttpRequest cannot load https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233. 

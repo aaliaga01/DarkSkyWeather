@@ -1,6 +1,15 @@
 
-
 $(document).ready(function() {
+
+/*function showUser(str){
+  if(str==""){
+    document.getElementById('txtHint').innerHtml="";
+    return;
+  }
+  if (window.XMLHttpRequest){//code for IE7+,firefox,chrome,opera,safari
+    xmlhttp=new XMLHttpRequest();
+  }
+}*/
 
     $.ajax({
       url: 'https://api.darksky.net/forecast/c8353c5e5293f515913acc8eb4aa2689/37.8267,-122.4233',
