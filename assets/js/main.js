@@ -9,8 +9,14 @@ $(document).ready (function(){
 })
   .done(function(data) {
     console.log("success");
+
     $('#caja').append('<div class="icono">' + data.currently.icon + '</div>');
-    $('#caja').append('<p>Temperatura: ' + data.currently.temperature + '</p>')
+    $('#caja').append('<p>Temperature: ' + data.currently.temperature + '</p>');
+    $('#caja').append('<p>Wind: ' + data.currently.windSpeed + '</p>');
+    $('#caja').append('<p>Humidity: ' + data.currently.humidity + '</p>');
+    $('#caja').append('<p>UV Index: ' + data.currently.uvIndex + '</p>');
+    $('#caja').append('<p>Pressure: ' + data.currently.pressure + '</p>')
+
   })
   .fail(function(data) {
     console.log( "error" );

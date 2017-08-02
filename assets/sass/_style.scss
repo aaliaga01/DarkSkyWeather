@@ -1,11 +1,15 @@
+
+
 #contenedor-principal{
-	background-image: url(dist/iconos/lluvia.jpg);
-	background-position: center;
+	background-image: url(..dist/iconos/lluvia.jpg);
 	background-size: cover;
 	height:100vh;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	#caja{
 		width: 25%;
-		margin: 0 auto;
+		height: 100vh;
+		margin: 10% auto;
 		height: 50%;
 		background-color: white;
 		border: solid thin silver;
